@@ -1,6 +1,9 @@
 package exos;
 
+import java.util.AbstractMap;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -53,49 +56,49 @@ import java.util.Map;
 
 public class Exo3 implements Exo {
 
-    @Override public Map<String, String> getMap() {
-        Map<String, String> map = new HashMap<>();
+    @Override public List<AbstractMap.SimpleEntry<String, String>> getMap() {
+        List<AbstractMap.SimpleEntry<String, String>> map = new ArrayList<>();
 
-        map.put("2 10-1 2-1 2-2 3-3 4-4 5-5 6-6 7-7 8-8 9-9 10", "1 2 1 1 1 1 1 1 1 1");
-        map.put("9 10-1 2-1 3-1 4-1 5-1 5-1 6-1 7-1 8-1 9-1 10", "pas possible");
-        map.put("9 10-1 2-1 3-1 4-1 5-1 6-1 7-1 8-1 9-1 10-10 11", "1 2 3 4 5 6 7 8 9 9");
-        map.put("2 10-1 2-2 3-3 4-1 2-4 5-5 6-6 7-7 8-8 9-9 10", "1 1 1 2 1 1 1 1 1 1");
-        map.put("10 10-1 2-1 3-1 4-1 5-1 6-1 7-1 8-1 9-1 10-1 11", "1 2 3 4 5 6 7 8 9 10");
-        map.put("3 3-1 2-1 2-1 2", "1 2 3");
-        map.put("1 10-1 2-2 3-3 4-4 5-5 6-6 7-7 8-8 9-9 10-10 11", "1 1 1 1 1 1 1 1 1 1");
-        map.put("3 3-1 2-2 3-3 4", "1 1 1");
-        map.put("1 10-1 2-2 3-3 4-9 10-5 6-6 7-7 8-8 9-9 10-10 11", "pas possible");
-        map.put("10 10-1 2-1 3-1 4-1 5-1 6-1 7-1 8-1 9-1 10-1 11", "1 2 3 4 5 6 7 8 9 10");
-        map.put("2 10-1 2-2 3-3 4-4 5-5 6-6 7-7 8-8 9-9 10-1 2", "1 1 1 1 1 1 1 1 1 2");
-        map.put("2 10-1 2-1 2-2 3-3 4-4 5-5 6-6 7-7 8-8 9-9 10", "1 2 1 1 1 1 1 1 1 1");
-        map.put("2 10-1 2-2 3-3 4-1 2-4 5-5 6-6 7-7 8-8 9-9 10", "1 1 1 2 1 1 1 1 1 1");
-        map.put("9 10-1 2-1 3-1 4-1 5-1 5-1 6-1 7-1 8-1 9-1 10", "pas possible");
-        map.put("2 10-1 2-2 3-3 4-4 5-5 6-6 7-7 8-8 9-9 10-1 2", "1 1 1 1 1 1 1 1 1 2");
-        map.put("9 10-1 2-1 3-1 4-1 5-1 6-1 7-1 8-1 9-1 10-10 11", "1 2 3 4 5 6 7 8 9 9");
-        map.put("1 10-1 2-2 3-3 4-4 5-5 6-6 7-7 8-8 9-9 10-10 11", "1 1 1 1 1 1 1 1 1 1");
-        map.put("2 10-1 2-2 3-3 4-4 5-5 6-6 7-7 8-8 9-9 10-1 2", "1 1 1 1 1 1 1 1 1 2");
-        map.put("1 10-1 2-2 3-3 4-9 10-5 6-6 7-7 8-8 9-9 10-10 11", "pas possible");
-        map.put("3 3-1 2-1 2-1 2", "1 2 3");
-        map.put("2 10-1 2-1 2-2 3-3 4-4 5-5 6-6 7-7 8-8 9-9 10", "1 2 1 1 1 1 1 1 1 1");
-        map.put("2 10-1 2-2 3-3 4-1 2-4 5-5 6-6 7-7 8-8 9-9 10", "1 1 1 2 1 1 1 1 1 1");
-        map.put("3 3-1 2-1 2-1 2", "1 2 3");
-        map.put("3 3-1 2-2 3-3 4", "1 1 1");
-        map.put("10 10-1 2-1 3-1 4-1 5-1 6-1 7-1 8-1 9-1 10-1 11", "1 2 3 4 5 6 7 8 9 10");
-        map.put("9 10-1 2-1 3-1 4-1 5-1 6-1 7-1 8-1 9-1 10-10 11", "1 2 3 4 5 6 7 8 9 9");
-        map.put("1 10-1 2-2 3-3 4-4 5-5 6-6 7-7 8-8 9-9 10-10 11", "1 1 1 1 1 1 1 1 1 1");
-        map.put("1 10-1 2-2 3-3 4-9 10-5 6-6 7-7 8-8 9-9 10-10 11", "pas possible");
-        map.put("9 10-1 2-1 3-1 4-1 5-1 5-1 6-1 7-1 8-1 9-1 10", "pas possible");
-        map.put("3 3-1 2-2 3-3 4", "1 1 1");
-        map.put("1 10-1 2-2 3-3 4-4 5-5 6-6 7-7 8-8 9-9 10-10 11", "1 1 1 1 1 1 1 1 1 1");
-        map.put("2 10-1 2-2 3-3 4-4 5-5 6-6 7-7 8-8 9-9 10-1 2", "1 1 1 1 1 1 1 1 1 2");
-        map.put("9 10-1 2-1 3-1 4-1 5-1 5-1 6-1 7-1 8-1 9-1 10", "pas possible");
-        map.put("2 10-1 2-1 2-2 3-3 4-4 5-5 6-6 7-7 8-8 9-9 10", "1 2 1 1 1 1 1 1 1 1");
-        map.put("9 10-1 2-1 3-1 4-1 5-1 6-1 7-1 8-1 9-1 10-10 11", "1 2 3 4 5 6 7 8 9 9");
-        map.put("2 10-1 2-2 3-3 4-1 2-4 5-5 6-6 7-7 8-8 9-9 10", "1 1 1 2 1 1 1 1 1 1");
-        map.put("3 3-1 2-1 2-1 2", "1 2 3");
-        map.put("1 10-1 2-2 3-3 4-9 10-5 6-6 7-7 8-8 9-9 10-10 11", "pas possible");
-        map.put("10 10-1 2-1 3-1 4-1 5-1 6-1 7-1 8-1 9-1 10-1 11", "1 2 3 4 5 6 7 8 9 10");
-        map.put("3 3-1 2-2 3-3 4", "1 1 1");
+        map.add(new AbstractMap.SimpleEntry<>("2 10-1 2-1 2-2 3-3 4-4 5-5 6-6 7-7 8-8 9-9 10", "1 2 1 1 1 1 1 1 1 1"));
+        map.add(new AbstractMap.SimpleEntry<>("9 10-1 2-1 3-1 4-1 5-1 5-1 6-1 7-1 8-1 9-1 10", "pas possible"));
+        map.add(new AbstractMap.SimpleEntry<>("9 10-1 2-1 3-1 4-1 5-1 6-1 7-1 8-1 9-1 10-10 11", "1 2 3 4 5 6 7 8 9 1"));
+        map.add(new AbstractMap.SimpleEntry<>("2 10-1 2-2 3-3 4-1 2-4 5-5 6-6 7-7 8-8 9-9 10", "1 1 1 2 1 1 1 1 1 1"));
+        map.add(new AbstractMap.SimpleEntry<>("10 10-1 2-1 3-1 4-1 5-1 6-1 7-1 8-1 9-1 10-1 11", "1 2 3 4 5 6 7 8 9 10"));
+        map.add(new AbstractMap.SimpleEntry<>("3 3-1 2-1 2-1 2", "1 2 3"));
+        map.add(new AbstractMap.SimpleEntry<>("1 10-1 2-2 3-3 4-4 5-5 6-6 7-7 8-8 9-9 10-10 11", "1 1 1 1 1 1 1 1 1 1"));
+        map.add(new AbstractMap.SimpleEntry<>("3 3-1 2-2 3-3 4", "1 1 1"));
+        map.add(new AbstractMap.SimpleEntry<>("1 10-1 2-2 3-3 4-9 10-5 6-6 7-7 8-8 9-9 10-10 11", "pas possible"));
+        map.add(new AbstractMap.SimpleEntry<>("10 10-1 2-1 3-1 4-1 5-1 6-1 7-1 8-1 9-1 10-1 11", "1 2 3 4 5 6 7 8 9 10"));
+        map.add(new AbstractMap.SimpleEntry<>("2 10-1 2-2 3-3 4-4 5-5 6-6 7-7 8-8 9-9 10-1 2", "1 1 1 1 1 1 1 1 1 2"));
+        map.add(new AbstractMap.SimpleEntry<>("2 10-1 2-1 2-2 3-3 4-4 5-5 6-6 7-7 8-8 9-9 10", "1 2 1 1 1 1 1 1 1 1"));
+        map.add(new AbstractMap.SimpleEntry<>("2 10-1 2-2 3-3 4-1 2-4 5-5 6-6 7-7 8-8 9-9 10", "1 1 1 2 1 1 1 1 1 1"));
+        map.add(new AbstractMap.SimpleEntry<>("9 10-1 2-1 3-1 4-1 5-1 5-1 6-1 7-1 8-1 9-1 10", "pas possible"));
+        map.add(new AbstractMap.SimpleEntry<>("2 10-1 2-2 3-3 4-4 5-5 6-6 7-7 8-8 9-9 10-1 2", "1 1 1 1 1 1 1 1 1 2"));
+        map.add(new AbstractMap.SimpleEntry<>("9 10-1 2-1 3-1 4-1 5-1 6-1 7-1 8-1 9-1 10-10 11", "1 2 3 4 5 6 7 8 9 1"));
+        map.add(new AbstractMap.SimpleEntry<>("1 10-1 2-2 3-3 4-4 5-5 6-6 7-7 8-8 9-9 10-10 11", "1 1 1 1 1 1 1 1 1 1"));
+        map.add(new AbstractMap.SimpleEntry<>("2 10-1 2-2 3-3 4-4 5-5 6-6 7-7 8-8 9-9 10-1 2", "1 1 1 1 1 1 1 1 1 2"));
+        map.add(new AbstractMap.SimpleEntry<>("1 10-1 2-2 3-3 4-9 10-5 6-6 7-7 8-8 9-9 10-10 11", "pas possible"));
+        map.add(new AbstractMap.SimpleEntry<>("3 3-1 2-1 2-1 2", "1 2 3"));
+        map.add(new AbstractMap.SimpleEntry<>("2 10-1 2-1 2-2 3-3 4-4 5-5 6-6 7-7 8-8 9-9 10", "1 2 1 1 1 1 1 1 1 1"));
+        map.add(new AbstractMap.SimpleEntry<>("2 10-1 2-2 3-3 4-1 2-4 5-5 6-6 7-7 8-8 9-9 10", "1 1 1 2 1 1 1 1 1 1"));
+        map.add(new AbstractMap.SimpleEntry<>("3 3-1 2-1 2-1 2", "1 2 3"));
+        map.add(new AbstractMap.SimpleEntry<>("3 3-1 2-2 3-3 4", "1 1 1"));
+        map.add(new AbstractMap.SimpleEntry<>("10 10-1 2-1 3-1 4-1 5-1 6-1 7-1 8-1 9-1 10-1 11", "1 2 3 4 5 6 7 8 9 10"));
+        map.add(new AbstractMap.SimpleEntry<>("9 10-1 2-1 3-1 4-1 5-1 6-1 7-1 8-1 9-1 10-10 11", "1 2 3 4 5 6 7 8 9 1"));
+        map.add(new AbstractMap.SimpleEntry<>("1 10-1 2-2 3-3 4-4 5-5 6-6 7-7 8-8 9-9 10-10 11", "1 1 1 1 1 1 1 1 1 1"));
+        map.add(new AbstractMap.SimpleEntry<>("1 10-1 2-2 3-3 4-9 10-5 6-6 7-7 8-8 9-9 10-10 11", "pas possible"));
+        map.add(new AbstractMap.SimpleEntry<>("9 10-1 2-1 3-1 4-1 5-1 5-1 6-1 7-1 8-1 9-1 10", "pas possible"));
+        map.add(new AbstractMap.SimpleEntry<>("3 3-1 2-2 3-3 4", "1 1 1"));
+        map.add(new AbstractMap.SimpleEntry<>("1 10-1 2-2 3-3 4-4 5-5 6-6 7-7 8-8 9-9 10-10 11", "1 1 1 1 1 1 1 1 1 1"));
+        map.add(new AbstractMap.SimpleEntry<>("2 10-1 2-2 3-3 4-4 5-5 6-6 7-7 8-8 9-9 10-1 2", "1 1 1 1 1 1 1 1 1 2"));
+        map.add(new AbstractMap.SimpleEntry<>("9 10-1 2-1 3-1 4-1 5-1 5-1 6-1 7-1 8-1 9-1 10", "pas possible"));
+        map.add(new AbstractMap.SimpleEntry<>("2 10-1 2-1 2-2 3-3 4-4 5-5 6-6 7-7 8-8 9-9 10", "1 2 1 1 1 1 1 1 1 1"));
+        map.add(new AbstractMap.SimpleEntry<>("9 10-1 2-1 3-1 4-1 5-1 6-1 7-1 8-1 9-1 10-10 11", "1 2 3 4 5 6 7 8 9 1"));
+        map.add(new AbstractMap.SimpleEntry<>("2 10-1 2-2 3-3 4-1 2-4 5-5 6-6 7-7 8-8 9-9 10", "1 1 1 2 1 1 1 1 1 1"));
+        map.add(new AbstractMap.SimpleEntry<>("3 3-1 2-1 2-1 2", "1 2 3"));
+        map.add(new AbstractMap.SimpleEntry<>("1 10-1 2-2 3-3 4-9 10-5 6-6 7-7 8-8 9-9 10-10 11", "pas possible"));
+        map.add(new AbstractMap.SimpleEntry<>("10 10-1 2-1 3-1 4-1 5-1 6-1 7-1 8-1 9-1 10-1 11", "1 2 3 4 5 6 7 8 9 10"));
+        map.add(new AbstractMap.SimpleEntry<>("3 3-1 2-2 3-3 4", "1 1 1"));
 
         return map;
     }

@@ -1,11 +1,12 @@
 package exos;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.AbstractMap;
+import java.util.ArrayList;
+import java.util.List;
 
 public interface Exo {
-    default Map<String, String> getMap() {
-        return new HashMap<>();
+    default List<AbstractMap.SimpleEntry<String, String>> getMap() {
+        return new ArrayList<>();
     }
 
     default boolean compareResult(String attendu, String obtenu) {

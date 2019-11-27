@@ -1,6 +1,9 @@
 package exos;
 
+import java.util.AbstractMap;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -18,7 +21,7 @@ import java.util.Map;
  * Vous piochez alors 4 planches de bois aléatoirement et commencez à les découper pour constituer un cadre.
  *
  * Entrée :
- *  - Quatre entiers séparés par un espace :
+ *  - Quatre entiers séparés par un tiret :
  *      - Entier 1 : la taille de la planche 1 en cm
  *      - Entier 2 : la taille de la planche 2 en cm
  *      - Entier 3 : la taille de la planche 3 en cm
@@ -46,69 +49,67 @@ import java.util.Map;
 
 
 public class Exo2 implements Exo {
-    @Override public Map<String, String> getMap() {
-        Map<String, String> map = new HashMap<>();
+    @Override public List<AbstractMap.SimpleEntry<String, String>> getMap() {
+        List<AbstractMap.SimpleEntry<String, String>> map = new ArrayList<>();
 
-        map.put("20-15-4-5", "28");
-        map.put("25-24-23-22", "6");
-        map.put("10-5-5-5", "5");
-        map.put("9-9-9-9", "0");
-        map.put("10-5-5-5", "5");
-        map.put("20-15-4-5", "28");
-        map.put("30-30-29-30", "3");
-        map.put("25-24-23-22", "6");
-        map.put("20-15-4-5", "28");
-        map.put("10-10-10-10", "0");
-        map.put("30-30-29-30", "3");
-        map.put("25-24-23-22", "6");
-        map.put("10-10-10-10", "0");
-        map.put("10-5-5-5", "5");
-        map.put("30-30-29-30", "3");
-        map.put("9-9-9-9", "0");
-        map.put("25-24-23-22", "6");
-        map.put("25-24-23-22", "6");
-        map.put("10-5-5-5", "5");
-        map.put("20-15-4-5", "28");
-        map.put("20-15-4-5", "28");
-        map.put("10-5-5-5", "5");
-        map.put("30-30-29-30", "3");
-        map.put("20-15-4-5", "28");
-        map.put("30-30-29-30", "3");
-        map.put("10-10-10-10", "0");
-        map.put("30-30-29-30", "3");
-        map.put("25-24-23-22", "6");
-        map.put("10-5-5-5", "5");
-        map.put("10-10-10-10", "0");
-        map.put("25-24-23-22", "6");
-        map.put("20-15-4-5", "28");
-        map.put("10-10-10-10", "0");
-        map.put("10-5-5-5", "5");
-        map.put("20-15-4-5", "28");
-        map.put("20-15-4-5", "28");
-        map.put("30-30-29-30", "3");
-        map.put("9-9-9-9", "0");
-        map.put("25-24-23-22", "6");
-        map.put("20-15-4-5", "28");
-        map.put("30-30-29-30", "3");
-        map.put("10-10-10-10", "0");
-        map.put("10-5-5-5", "5");
-        map.put("10-5-5-5", "5");
-        map.put("25-24-23-22", "6");
-        map.put("30-30-29-30", "3");
-        map.put("9-9-9-9", "0");
-        map.put("25-24-23-22", "6");
-        map.put("10-5-5-5", "5");
-        map.put("10-10-10-10", "0");
-        map.put("10-5-5-5", "5");
-        map.put("20-15-4-5", "28");
-        map.put("30-30-29-30", "3");
-        map.put("20-15-4-5", "28");
-        map.put("25-24-23-22", "6");
-        map.put("30-30-29-30", "3");
-        map.put("10-10-10-10", "0");
-        map.put("10-5-5-5", "5");
-        map.put("25-24-23-22", "6");
-        map.put("30-30-29-30", "3");
+        map.add(new AbstractMap.SimpleEntry<>("20-15-4-5", "28"));
+        map.add(new AbstractMap.SimpleEntry<>("25-24-23-22", "6"));
+        map.add(new AbstractMap.SimpleEntry<>("10-5-5-5", "5"));
+        map.add(new AbstractMap.SimpleEntry<>("9-9-9-9", "0"));
+        map.add(new AbstractMap.SimpleEntry<>("10-5-5-5", "5"));
+        map.add(new AbstractMap.SimpleEntry<>("20-15-4-5", "28"));
+        map.add(new AbstractMap.SimpleEntry<>("30-30-29-30", "3"));
+        map.add(new AbstractMap.SimpleEntry<>("25-24-23-22", "6"));
+        map.add(new AbstractMap.SimpleEntry<>("20-15-4-5", "28"));
+        map.add(new AbstractMap.SimpleEntry<>("10-10-10-10", "0"));
+        map.add(new AbstractMap.SimpleEntry<>("30-30-29-30", "3"));
+        map.add(new AbstractMap.SimpleEntry<>("25-24-23-22", "6"));
+        map.add(new AbstractMap.SimpleEntry<>("10-10-10-10", "0"));
+        map.add(new AbstractMap.SimpleEntry<>("10-5-5-5", "5"));
+        map.add(new AbstractMap.SimpleEntry<>("30-30-29-30", "3"));
+        map.add(new AbstractMap.SimpleEntry<>("9-9-9-9", "0"));
+        map.add(new AbstractMap.SimpleEntry<>("25-24-23-22", "6"));
+        map.add(new AbstractMap.SimpleEntry<>("25-24-23-22", "6"));
+        map.add(new AbstractMap.SimpleEntry<>("10-5-5-5", "5"));
+        map.add(new AbstractMap.SimpleEntry<>("20-15-4-5", "28"));
+        map.add(new AbstractMap.SimpleEntry<>("20-15-4-5", "28"));
+        map.add(new AbstractMap.SimpleEntry<>("10-5-5-5", "5"));
+        map.add(new AbstractMap.SimpleEntry<>("30-30-29-30", "3"));
+        map.add(new AbstractMap.SimpleEntry<>("20-15-4-5", "28"));
+        map.add(new AbstractMap.SimpleEntry<>("30-30-29-30", "3"));
+        map.add(new AbstractMap.SimpleEntry<>("10-10-10-10", "0"));
+        map.add(new AbstractMap.SimpleEntry<>("30-30-29-30", "3"));
+        map.add(new AbstractMap.SimpleEntry<>("25-24-23-22", "6"));
+        map.add(new AbstractMap.SimpleEntry<>("10-5-5-5", "5"));
+        map.add(new AbstractMap.SimpleEntry<>("10-10-10-10", "0"));
+        map.add(new AbstractMap.SimpleEntry<>("25-24-23-22", "6"));
+        map.add(new AbstractMap.SimpleEntry<>("20-15-4-5", "28"));
+        map.add(new AbstractMap.SimpleEntry<>("10-10-10-10", "0"));
+        map.add(new AbstractMap.SimpleEntry<>("10-5-5-5", "5"));
+        map.add(new AbstractMap.SimpleEntry<>("20-15-4-5", "28"));
+        map.add(new AbstractMap.SimpleEntry<>("20-15-4-5", "28"));
+        map.add(new AbstractMap.SimpleEntry<>("30-30-29-30", "3"));
+        map.add(new AbstractMap.SimpleEntry<>("9-9-9-9", "0"));
+        map.add(new AbstractMap.SimpleEntry<>("25-24-23-22", "6"));
+        map.add(new AbstractMap.SimpleEntry<>("20-15-4-5", "28"));
+        map.add(new AbstractMap.SimpleEntry<>("30-30-29-30", "3"));
+        map.add(new AbstractMap.SimpleEntry<>("10-10-10-10", "0"));
+        map.add(new AbstractMap.SimpleEntry<>("10-5-5-5", "5"));
+        map.add(new AbstractMap.SimpleEntry<>("10-5-5-5", "5"));
+        map.add(new AbstractMap.SimpleEntry<>("25-24-23-22", "6"));
+        map.add(new AbstractMap.SimpleEntry<>("30-30-29-30", "3"));
+        map.add(new AbstractMap.SimpleEntry<>("9-9-9-9", "0"));
+        map.add(new AbstractMap.SimpleEntry<>("25-24-23-22", "6"));
+        map.add(new AbstractMap.SimpleEntry<>("10-5-5-5", "5"));
+        map.add(new AbstractMap.SimpleEntry<>("10-10-10-10", "0"));
+        map.add(new AbstractMap.SimpleEntry<>("10-5-5-5", "5"));
+        map.add(new AbstractMap.SimpleEntry<>("20-15-4-5", "28"));
+        map.add(new AbstractMap.SimpleEntry<>("30-30-29-30", "3"));
+        map.add(new AbstractMap.SimpleEntry<>("20-15-4-5", "28"));
+        map.add(new AbstractMap.SimpleEntry<>("25-24-23-22", "6"));
+        map.add(new AbstractMap.SimpleEntry<>("30-30-29-30", "3"));
+        map.add(new AbstractMap.SimpleEntry<>("10-10-10-10", "0"));
+        map.add(new AbstractMap.SimpleEntry<>("10-5-5-5", "5"));
 
         return map;
     }
