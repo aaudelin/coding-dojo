@@ -9,10 +9,10 @@ import java.util.Map;
  * Vous partez en camping avec vos potes. Marshmallows au barbecue, bières et musique sont au programme de cette douce soirée.
  *
  * Cependant, il vous croire que vous portez vraiment malheur mais il manque une place pour dormir bien au chaud dans la caravane.
- * En bon lâche vous ne souhaitez certainement pas vous sacrifier et dormir dans la tente qui sent encore le vomi.
+ * En bon lâche vous ne souhaitez certainement pas vous sacrifier et dormir dans la tente qui sent encore le vomi de l'an dernier.
  *
- * Il vous vient alors l'idée de proposer le jeu de la courte paille et de créer un programme pour automatiser la vérification de la taille
- * des bouts de bois.
+ * Il vous vient alors à l'idée de proposer le jeu de la courte paille et de créer un programme pour automatiser
+ * la vérification de la taille des bouts de bois.
  *
  *
  * Entrée :

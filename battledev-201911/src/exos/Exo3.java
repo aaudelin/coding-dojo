@@ -5,8 +5,8 @@ import java.util.Map;
 
 /**
  *
- * En tant que receleur de l'an 3250, vous possédez les derniers cables RJ11 afin
- * de raccorder la terre avec un nouvel internet 150 terraoctets.
+ * En tant que receleur de l'an 1754 après le Death Stranding, vous possédez les derniers cables RJ11 afin
+ * de raccorder la terre avec un nouvel internet 150 terraoctets par seconde.
  *
  * Sans cela le planète sera détruite (allons savoir pourquoi ?)
  * Vous êtes alors le seul et dernier espoir pour rallier toute la planète en quelques millisecondes.
@@ -17,18 +17,18 @@ import java.util.Map;
  * Entrée :
  *  - Tiret 1 : deux entiers séparés par un espace
  *      - entier 1 : N le nombre de cables à votre disposition
- *      - entier 2 : M le nombre de requêtes.
+ *      - entier 2 : M le nombre de requêtes
  *          Une requête correspond à une demande de câble entre une date de début et une date de fin.
  *  - Tiret 2 à M + 1 : deux entiers séparés par un espace
- *      - entier 1 : la date de début de la requete en secondes depuis l'instant T
- *      - entier 2 : la date de fin de la requete en secondes depuis l'instant T
- *      NB : un cable est immédiatement disponible à sa date de fin, pas besoin d'attendre une seconde
+ *      - entier 1 : la date de début de la requete en secondes depuis un instant T
+ *      - entier 2 : la date de fin de la requete en secondes depuis un instant T
+ *      NB : un cable est immédiatement disponible à sa date de fin, inutile d'attendre une seconde
  *
  * Sortie :
  *  La suite optimisée du numéro de câble fourni à chaque requête. Il faut donc utiliser le moins de câbles possible
  *  et utiliser les câbles dans l'ordre de leur numérotation. La numérotation des câbles est libre.
  *
- *  Retourner la chaine "pas possible" si vous n'avez pas assez de cables pour satisfaire les demandes
+ *  Retourner la chaine "pas possible" si vous n'avez pas assez de cables pour satisfaire les demandes à un instant donné
  *
  *
  * Exemples :

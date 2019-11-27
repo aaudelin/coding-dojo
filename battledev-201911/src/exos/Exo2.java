@@ -6,7 +6,7 @@ import java.util.Map;
 /**
  *
  * Lassé de faire du développement et de résoudre des algos inutiles vous vous décidez à
- * vous lancer dans votre une nouvelle entreprise de création de cadres en bois.
+ * vous lancer dans votre nouvelle entreprise de création de cadres en bois.
  *
  * Votre premier client...votre grand-mère qui veut encadrer toutes les photos de famille de ses 80 ans.
  *
