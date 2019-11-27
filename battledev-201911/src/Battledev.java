@@ -4,7 +4,7 @@ import java.util.Map;
 
 public class Battledev {
     // Injecter le bon exercice
-    private static Exo exo = new Exo3();
+    private static Exo exo = new Exo1();
 
 
 
